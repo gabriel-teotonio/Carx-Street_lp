@@ -1,0 +1,31 @@
+
+.show-car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    margin: 4rem 0;
+    height: auto;
+    min-height: 100vh;
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .show-car_list-cars{
+        margin: 0 auto;
+    }
+    .show-car_list-icons{
+        display: flex;
+        margin: 0 auto;
+        gap: 2rem;
+        align-items: baseline;
+
+        .show-car_list-icons_item{
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+}

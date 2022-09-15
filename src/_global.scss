@@ -1,0 +1,23 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'inter', sans-serif;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.title-section{
+    font-size: 2rem;
+    font-weight: 700;
+}

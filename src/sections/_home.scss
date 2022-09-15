@@ -1,0 +1,61 @@
+@import '../variables';
+@import '../components/buttons';
+
+
+main{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url('../images/png-jpeg/carx-street.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    padding: 0 4rem;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+
+    .home-content{
+        width: 50%;
+        height: 100%;
+        .home-content_title{
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        .home-content_button{
+            cursor: pointer;
+           @include buttonPrimary();
+           margin-top: 4rem;
+        }
+    }
+
+    .home-video{
+        display: flex;
+        width: 50%;
+        max-width: 400px;
+        video{
+            border-radius: 6px;
+            width: 100%;
+            margin-left: 2rem;
+        }
+    }
+}
+
+
+@media (max-width:820px){
+    main{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+        .home-content{
+            width: 100%;
+        }
+        .home-video{
+            video{
+                bottom: 0;
+            }
+        }
+    }
+}
