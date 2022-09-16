@@ -17,7 +17,18 @@ a{
     color: currentColor;
 }
 
+.Container{
+    display: none;
+}
+
+
 .title-section{
     font-size: 2rem;
     font-weight: 700;
+}
+
+@media (max-width:420px){
+    .title-section{
+        font-size: 1rem;
+    }
 }

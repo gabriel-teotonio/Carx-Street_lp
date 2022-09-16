@@ -29,3 +29,24 @@
         }
     }
 }
+
+
+@media (max-width:620px){
+    .show-car{
+
+        .show-car_list-cars{
+            img{
+                width: 25%;
+            }
+        }
+
+        .show-car_list-icons{
+            flex-direction: column;
+            gap: 6rem;
+            align-items: center;
+            .show-car-icon-line{
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

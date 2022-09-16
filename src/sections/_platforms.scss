@@ -1,6 +1,18 @@
 @import '../components/buttons';
 
 
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .platforms{
     display: flex;
     position: relative;
@@ -16,10 +28,11 @@
         z-index: -10;
         transform: rotate(-144deg);
         width: 400px;
+        max-width: 100%;
     }
     .platforms-box_mockup{
-        width: 380px;
-        height: 270px;
+        max-width: 380px;
+        max-height: 270px;
         max-width: 380px;
         background: linear-gradient(133.08deg, #4400D6 -7.4%, #5C0087 105.05%);
         box-shadow: 2px 4px 8px rgba(92, 0, 135, 0.46);
@@ -30,6 +43,8 @@
         .platforms-box_mockup-img{
             width: 110%;
             margin: 0 auto;
+            transform: translateY(0px);
+            animation: float 5s ease-in-out infinite;
         }
     }
     .platforms-info{
@@ -41,7 +56,7 @@
         }
         .platforms-info_icons{
             display: flex;
-            align-items: center;
+            align-items: left;
             margin: 1rem 0;
             p{
                 margin: 1rem 0;
@@ -64,9 +79,25 @@
     .platforms{
         flex-direction: column;
         gap: 4rem;
-        margin: 4rem 0 ;
+        margin:8rem 0 ;
+        padding: 0 2rem;
         .platforms-info{
             width: 100%;
+        }
+    }
+}
+
+@media (max-width:420px){
+    .platforms{
+        .platforms-box_mockup{
+            .platforms-box_mockup-img{
+                width: 100%;
+            }
+        }
+        .platforms-info{
+            .platforms-info_icons{
+                flex-direction: column;
+            }
         }
     }
 }

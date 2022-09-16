@@ -51,7 +51,8 @@ footer{
     }
     .footer-copyright{
         text-align: center;
-        margin: 1rem 0;
+        margin: 2rem 0;
+        font-size: 10px;
     }
 }
 
@@ -67,3 +68,15 @@ footer{
         }
     }
 }
+
+@media (max-width:620px){
+    .footer-container{
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+        gap: 2rem;
+        .footer-topic_newsletter{
+            margin-left: initial;
+        }
+    }
+}
+

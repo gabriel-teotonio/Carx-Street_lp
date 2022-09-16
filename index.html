@@ -12,125 +12,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- js -->
+    <script src="src/js/preload.js" defer></script>
 </head>
-<body>
-    <header>
-        <img src="images/png-jpeg/logo-carxStreet.png" alt="logo CarX street">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Faq</li>
-                <li>Download</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article class="home-content">
-            <h1 class="home-content_title">Tenha uma experiência <span class="text-gradient_title">eletrizante</span> e acelere <span class="text-gradient_title">online</span></h1>
-            <p>Totalmente gratuito para dispositivos mobile e desktop</p>
-            <button class="home-content_button"><a href="#">Jogue agora!</a></button>
-        </article>
-        <article class="home-video">
-            <video 
-                poster="images/png-jpeg/carx-street_2.jpg" 
-                src="images/CarX Street Gameplay.mp4"
-                muted
-                loop
-            >seu navegador não suporta este vídeo</video>
-        </article>
-    </main>
-
-    <section class="show-map">
-        <div class="show-map_box-img" >
-            <img class="show-map_img-city" src="images/png-jpeg/nigth-carxstreet.png" alt="foto da cidade noturna">
-            <div class="element-blur"></div>
-        </div>
-        <p>Você pode competir e apostar nas pistas noturnas de um <span class="emphases-text">mundo aberto</span></p>
-        <img class="show-map_img-bgPneu" src="images/png-jpeg/rastro-pneu2.svg" alt="rastro de pneu">
-    </section>
-
-    <section class="show-car"> 
-        <h2>Escolha um <span class="emphases-text">carro</span> para</h2>
-        <div class="show-car_list-cars">
-            <img src="images/png-jpeg/blueCar-carxStreet 1.png" alt="car-blue">
-            <img src="images/png-jpeg/redCar-carxStreet 1.png" alt="car-red">
-            <img src="images/png-jpeg/whiteCar-carxStreet 1.png" alt="car-white">
-        </div>
-        <div class="show-car_list-icons">
-            <div class="show-car_list-icons_item">
-                <img src="images/png-jpeg/car-custom.svg" alt="image customizar">
-                <p>Customizar</p>
+<body onload="loading()">
+    <div class="preload-container">
+        <div class="load"><img src="images/png-jpeg/icons8-roda-100.png" alt="load img"></div>
+    </div>
+<div class="Container">
+        <header>
+            <img src="images/png-jpeg/logo-carxStreet.png" alt="logo CarX street">
+            <a href="https://store.steampowered.com/app/1114150/CarX_Street/" target="_blank">Download</a>
+        </header>
+        <main>
+            <article class="home-content">
+                <h1 class="home-content_title">Tenha uma experiência 
+                    <span class="text-gradient_title">eletrizante</span> e acelere <span class="text-gradient_title">online</span>
+                </h1>
+                <p>Totalmente gratuito para dispositivos mobile e desktop</p>
+                <div class="home-content_buttons">
+                    <a class="home-content_button" target="_blank" href="https://store.steampowered.com/app/1114150/CarX_Street/">Jogue agora !</a>
+                </div>
+            </article>
+            <article class="home-video">
+                <video
+                    src="images/CarX Street Gameplay.mp4"
+                    muted
+                    loop
+                    autoplay
+                >seu navegador não suporta este vídeo</video>
+            </article>
+        </main>
+    
+        <section class="show-map">
+            <div class="show-map_box-img" >
+                <img class="show-map_img-city" src="images/png-jpeg/nigth-carxstreet.png" alt="foto da cidade noturna">
+                <div class="element-blur"></div>
             </div>
-                <img src="images/png-jpeg/conection-line.svg" alt="linha de conexão">
-            <div class="show-car_list-icons_item">
-                <img src="images/png-jpeg/car-turned.svg" alt="image tunar">
-                <p>Tunar</p>
+            <p>Você pode competir e apostar nas pistas noturnas de um <span class="emphases-text">mundo aberto</span></p>
+            <img class="show-map_img-bgPneu" src="images/png-jpeg/rastro-pneu2.svg" alt="rastro de pneu">
+        </section>
+    
+        <section class="show-car">
+            <h2>Escolha um <span class="emphases-text">carro</span> para</h2>
+            <div class="show-car_list-cars">
+                <img src="images/png-jpeg/blueCar-carxStreet 1.png" alt="car-blue">
+                <img src="images/png-jpeg/redCar-carxStreet 1.png" alt="car-red">
+                <img src="images/png-jpeg/whiteCar-carxStreet 1.png" alt="car-white">
             </div>
-                <img src="images/png-jpeg/conection-line.svg" alt="linha de conexão">
-            <div class="show-car_list-icons_item">
-                <img src="images/png-jpeg/comunity.svg" alt="image comunity">
-                <p>Dispultar com amigos</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="platforms">
-        <img class="platforms-bg-pneu" src="images/png-jpeg/rastro-pneu2.svg" alt="rastro de pneu no background">
-        <article>
-            <div class="platforms-box_mockup">
-                <img class="platforms-box_mockup-img" src="images/png-jpeg/mockup-carX.svg" alt="mockup carX street">
-            </div>
-        </article>
-        <article class="platforms-info"> 
-            <h2>Tenha uma imersão <span class="emphases-text">super realista</span> jogando no mobile ou desktop</h2>
-            <div class="platforms-info_icons">
-                <p><img src="images/png-jpeg/icon-velocimetro.svg" alt="">Jogabilidade realista</p>
-                <p><img src="images/png-jpeg/icon-car-drift.svg" alt="">Aprimore habilidades de drift</p>
-            </div>
-            <button class="platforms-info_btn">Jogar agora</button>
-        </article>
-    </section>
-
-    <section class="about"> 
-        <div class="about-container">
-            <h2>Conheça a Carx tecnologies</h2>
-            <a href="#">Visitar site <span class="material-symbols-outlined">arrow_right_alt</span></a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-topic">
-                <h4>Sobre</h4>
-                <ul>
-                    <li>País</li>
-                    <li>cnpj</li>
-                </ul>
-            </div>
-            <div class="footer-topic">
-                <h4>Contato</h4>
-                <ul>
-                    <li><a href="#">CarxStreet@carx.com</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="footer-topic">
-                <h4>Outros jogos</h4>
-                <ul>
-                    <li><a href="#">Carx Drift</a></li>
-                    <li><a href="#">Carx Hunter</a></li>
-                </ul>
-            </div>
-            <div class="footer-topic footer-topic_newsletter">
-                <label for="">Receba atualizações!</label>
-                <div class="footer-newsletter">
-                     <input type="email" placeholder="Seu email">
-                    <button>Enviar</button>
+            <div class="show-car_list-icons">
+                <div class="show-car_list-icons_item">
+                    <img class="show-car-icon" src="images/png-jpeg/car-custom.svg" alt="image customizar">
+                    <p>Customizar</p>
+                </div>
+                    <img class="show-car-icon-line" src="images/png-jpeg/conection-line.svg" alt="linha de conexão">
+                <div class="show-car_list-icons_item">
+                    <img class="show-car-icon" src="images/png-jpeg/car-turned.svg" alt="image tunar">
+                    <p>Tunar</p>
+                </div>
+                    <img class="show-car-icon-line" src="images/png-jpeg/conection-line.svg" alt="linha de conexão">
+                <div class="show-car_list-icons_item">
+                    <img class="show-car-icon" src="images/png-jpeg/comunity.svg" alt="image comunity">
+                    <p>Dispultar com amigos</p>
                 </div>
             </div>
-        </div>
-        <span class="footer-copyright">&copy; Todos os diretos reservados à carX tecnologies</span>
-    </footer>
+        </section>
+    
+        <section class="platforms">
+            <img class="platforms-bg-pneu" src="images/png-jpeg/rastro-pneu2.svg" alt="rastro de pneu no background">
+            <article>
+                <div class="platforms-box_mockup">
+                    <img class="platforms-box_mockup-img" src="images/png-jpeg/mockup-carX.svg" alt="mockup carX street">
+                </div>
+            </article>
+            <article class="platforms-info">
+                <h2>Tenha uma imersão <span class="emphases-text">super realista</span> jogando no mobile ou desktop</h2>
+                <div class="platforms-info_icons">
+                    <p><img src="images/png-jpeg/icon-velocimetro.svg" alt="">Jogabilidade realista</p>
+                    <p><img src="images/png-jpeg/icon-car-drift.svg" alt="">Aprimore habilidades de drift</p>
+                </div>
+                <button class="platforms-info_btn">Jogar agora</button>
+            </article>
+        </section>
+    
+        <section class="about">
+            <div class="about-container">
+                <h2>Conheça a Carx tecnologies</h2>
+                <a href="https://carx-online.com/" target="_blank">Visitar site <span class="material-symbols-outlined">arrow_right_alt</span></a>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="footer-container">
+                <div class="footer-topic">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://play.google.com/store/apps/dev?id=8956145082759427129&hl=pt&gl=US">sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-topic">
+                    <h4>Social</h4>
+                    <ul>
+                        <li>CEO@CARX-TECH.COM</li>
+                        <li><a target="_blank" href="https://www.facebook.com/carx2/">Facebook</a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/user/Anatol3D">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-topic">
+                    <h4>Outros jogos</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.CarXTech.CarXDriftRacingFull&hl=pt_BR&gl=Br">Carx Drift</a></li>
+                        <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.carxtech.carxdr2">carX Drift Racing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-topic footer-topic_newsletter">
+                    <label for="">Receba atualizações!</label>
+                    <div class="footer-newsletter">
+                         <input type="email" placeholder="Seu email">
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <span class="footer-copyright">&copy; Todos os diretos reservados à carX tecnologies</span>
+        </footer>
+</div>
 </body>
 </html>

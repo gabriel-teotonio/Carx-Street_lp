@@ -33,11 +33,23 @@
         position: absolute;
         right: 0;
         z-index: -10;
+        max-width: 100%;
     }
 }
 
 @media (max-width:820px){
     .show-map{
+        padding: 0 1rem;
         flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:700px){
+    .show-map{
+        .show-map_box-img{
+            .show-map_img-city{
+                max-width: 100%;
+            }
+        }
     }
 }
